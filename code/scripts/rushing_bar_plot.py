@@ -10,4 +10,4 @@ bcr.bar_chart_race(df=df_weekly,
                    interpolate_period=False,
                    steps_per_period=10,
                    fixed_max=True,
-                   filename='output/Rushing Bar Plot.mp4')
+                   filename='output/animations/Rushing Bar Plot.mp4')

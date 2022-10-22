@@ -60,9 +60,9 @@ ax.tick_params(color=FONT_COLOR, labelcolor=FONT_COLOR)
 for spine in ax.spines.values():
     spine.set_edgecolor(FONT_COLOR)
 
-ax.w_xaxis.line.set_color(FONT_COLOR)
-ax.w_yaxis.line.set_color(FONT_COLOR)
-ax.w_zaxis.line.set_color(FONT_COLOR)
+ax.xaxis.line.set_color(FONT_COLOR)
+ax.yaxis.line.set_color(FONT_COLOR)
+ax.zaxis.line.set_color(FONT_COLOR)
 
 def init():
 
@@ -100,4 +100,4 @@ def animate(i):
 anim = animation.FuncAnimation(fig, animate, init_func=init,
                                frames=360, interval=40, blit=True)
 # Save
-anim.save('output/Pitch Type Classification.mp4', fps=30, extra_args=['-vcodec', 'libx264'])
+anim.save('output/animations/Pitch Type Classification.mp4', fps=30, extra_args=['-vcodec', 'libx264'])
